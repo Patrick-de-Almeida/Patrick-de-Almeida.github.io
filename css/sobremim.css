@@ -1,0 +1,48 @@
+.sobremim {
+  background-color: #232533;
+}
+
+.sobremim-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.sobremim-subtitulo {
+  font-size: 8rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  max-width: 4ch;
+  color: #383a59;
+}
+
+.sobremim-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 20px;
+  color: #f8f8f8;
+}
+
+.sobremim-texto strong {
+  color: #ff79c6;
+}
+
+@media (max-width: 800px) {
+  .sobremim-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .sobremim-subtitulo {
+    color: #383a59;
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+  .sobremim-texto {
+    font-size: 1.2rem;
+  }
+}

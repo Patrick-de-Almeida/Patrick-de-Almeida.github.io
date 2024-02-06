@@ -1,0 +1,52 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  margin-bottom: 30px;
+  line-height: 1.125;
+}
+
+.intro-texto {
+  font-size: 2rem;
+}
+
+.intro-nome {
+  color: #ff79c6;
+}
+
+.intro-titulo {
+  color: #383a59;
+  font-size: 4.25rem;
+}
+
+@media (max-width: 1000px) {
+  .introducao .intro-titulo {
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao .intro-titulo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+}
